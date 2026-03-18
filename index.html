@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RoosyCozy 다운로드</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="beta-header">
+        <div class="header-logo">ROOSYCOZY DOWNLOAD</div>
+        </header>
+
+    <div class="mission-card active">
+        <h2 class="mission-title">실행까지 가는 길</h2>
+        <p class="mission-desc">
+            이탈 없이 한 번에 성공해 봅시다.<br>
+            아래 순서대로 진행해 주세요.
+        </p>
+
+        <a href="roosycozy-portable-exe.zip" download class="btn-action" onclick="trackDownload()">
+            📥 RoosyCozy 다운로드
+        </a>
+
+        <div class="trust-badge-mini">
+            <span class="tb-icon">🛡️</span>
+            <span class="tb-text">SHA-256 무결성 검증 및 바이러스 검사 완료</span>
+        </div>
+
+        <div class="guide-box">
+            <div class="guide-row">
+                <span class="num-circle">1</span>
+                <div class="guide-text">
+                    <h4>파일 확인</h4>
+                    <p>파일은 <b>[내 PC > 다운로드]</b> 폴더에 저장됩니다.</p>
+                </div>
+            </div>
+
+            <div class="guide-row" style="background: #fff5f5; border-radius: 8px; padding: 10px;">
+                <span class="num-circle" style="background: #d32f2f;">2</span>
+                <div class="guide-text">
+                    <h4 style="color: #d32f2f; font-size: 1.3rem; font-weight: 900; margin-bottom: 5px;">
+                        압축 풀고 실행 (필수!)
+                    </h4>
+                    <p style="color: #d32f2f; font-size: 1.1rem; font-weight: 800; line-height: 1.4;">
+                        반드시 <span style="text-decoration: underline; text-underline-offset: 4px;">압축을 푼 뒤 폴더 안에서</span> 실행해 주세요.
+                    </p>
+                </div>
+            </div>
+
+            <div class="guide-row">
+                <span class="num-circle">3</span>
+                <div class="guide-text">
+                    <h4>경고창 무시 (중요!)</h4>
+                    <p>'서명되지 않은 앱' 경고는 정상이니 <b>[추가 정보] -> [실행]</b>을 눌러주세요.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="warning-area">
+            <h4 class="warning-header">📑 윈도우에서 'PC 보호' 창이 떴나요?</h4>
+            <div class="warning-img-flex">
+                <div class="w-img-item"><img src="warning_win_1.png" alt="PC 보호 경고창"><span class="w-caption">1단계: 추가 정보 클릭</span></div>
+                <div class="w-img-item"><img src="warning_win_2.png" alt="실행 버튼 화면"><span class="w-caption">2단계: 실행 클릭</span></div>
+            </div>
+        </div>
+        
+    </div>
+
+    <script>
+        // 1. 구글 스프레드시트 URL
+        const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzlGdBouqHmaHJzY1qP9VNaB_G0CJomirBvniezApbDPk-9HdNajTmeiqVvG78veTzw/exec';
+
+        // 2. 사용자 ID 생성
+        function getUserId() {
+            let userId = localStorage.getItem('roosy_user_id');
+            if (!userId) {
+                const randomStr = Math.random().toString(36).substring(2, 10) + Math.random().toString(36).substring(2, 6);
+                userId = 'user_' + randomStr;
+                localStorage.setItem('roosy_user_id', userId);
+            }
+            return userId;
+        }
+
+        // 3. 다운로드 카운팅
+        function trackDownload() {
+            const userId = getUserId();       
+            const action = "DOWNLOAD_ACTION"; 
+            const version = "official_v1"; // 베타에서 정식(official_v1)으로 기록되도록 살짝 수정해뒀습니다!
+            const finalUrl = `${SCRIPT_URL}?id=${userId}&action=${action}&version=${version}&t=${new Date().getTime()}`;
+
+            fetch(finalUrl, { method: 'GET', mode: 'no-cors' })
+            .then(() => console.log("기록 완료"))
+            .catch(err => console.error("기록 실패", err));
+        }
+    </script>
+</body>
+</html>
