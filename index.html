@@ -4,584 +4,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RoosyCozy 2nd Beta Mission</title>
+    <title>RoosyCozy Download</title>
+    <meta name="description" content="루지코지 베타 버전을 바로 다운로드할 수 있는 공식 페이지입니다.">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <div class="page-shell">
+        <header class="topbar">
+            <div class="brand-block">
+                <p class="eyebrow">ROOSYCOZY OFFICIAL</p>
+                <h1 class="brand-title">RoosyCozy 다운로드</h1>
+            </div>
+        </header>
 
-    <nav class="sidebar">
-        <div class="sidebar-title">📑 목차 (바로가기)</div>
-        <ul class="sidebar-menu">
-            <li id="nav-step-1" class="sidebar-menu-item active" onclick="goToStep(1)">STEP 1: 설치 및 세팅</li>
-            <li id="nav-step-2" class="sidebar-menu-item" onclick="goToStep(2)">STEP 2: 증거 기록하기</li>
-            <li id="nav-step-3" class="sidebar-menu-item" onclick="goToStep(3)">STEP 3: 사건 기록하기</li>
-            <li id="nav-step-4" class="sidebar-menu-item" onclick="goToStep(4)">STEP 4: 증빙자료 출력</li>
-        </ul>
-    </nav>
+        <main class="hero-card">
+            <section class="download-panel">
+                <span class="hero-badge">DOWNLOAD</span>
+                <a href="roosycozy-portable-exe.zip" download class="download-button" onclick="trackDownload()">
+                    <span class="button-label">RoosyCozy 베타 다운로드</span>
+                    <span class="button-meta">roosycozy-portable-exe.zip</span>
+                </a>
+            </section>
 
-    <header class="beta-header">
-        <div class="header-logo">ROOSYCOZY OFFICIAL V1</div>
-        <div class="progress-container">
-            <div id="progress-bar" class="progress-bar" style="width: 25%;"></div>
-        </div>
-    </header>
-
-    <div class="hero-section">
-        <h2 class="hero-title">루지코지 공식 가이드</h2>
-        <p class="hero-desc">
-            현장의 목소리로 더 강력해진 루지코지.<br>
-            🚨 <b>3초 만에 끝나는 기록과 완벽한 보호의 마법</b>을 시작하세요.
-        </p>
-    </div>
-
-    <div id="step-1" class="mission-card active">
-        <div class="step-badge">STEP 01</div>
-        <h2 class="mission-title">실행까지 가는 길</h2>
-        <p class="mission-desc">
-            이탈 없이 한 번에 성공해 봅시다.<br>
-            아래 순서대로 진행해 주세요.
-        </p>
-
-        <a href="roosycozy-portable-exe.zip" download class="btn-action" onclick="trackDownload()">
-            📥 RoosyCozy 베타 다운로드
-        </a>
-
-        <div class="guide-box">
-            <div class="guide-row">
-                <span class="num-circle">1</span>
-                <div class="guide-text">
-                    <h4>파일 확인</h4>
-                    <p>파일은 <b>[내 PC > 다운로드]</b> 폴더에 저장됩니다.</p>
+            <section class="info-stack">
+                <div class="quick-steps" aria-label="빠른 실행 순서">
+                    <div class="step-pill">
+                        <strong>1</strong>
+                        <span>ZIP 다운로드</span>
+                    </div>
+                    <div class="step-pill">
+                        <strong>2</strong>
+                        <span>압축 풀기</span>
+                    </div>
+                    <div class="step-pill">
+                        <strong>3</strong>
+                        <span>폴더 안에서 실행</span>
+                    </div>
                 </div>
-            </div>
 
-            <div class="guide-row" style="background: #fff5f5; border-radius: 8px; padding: 10px;">
-                <span class="num-circle" style="background: #d32f2f;">2</span>
-                <div class="guide-text">
-                    <h4 style="color: #d32f2f; font-size: 1.3rem; font-weight: 900; margin-bottom: 5px;">
-                        압축 풀고 실행 (필수!)
-                    </h4>
-                    <p style="color: #d32f2f; font-size: 1.1rem; font-weight: 800; line-height: 1.4;">
-                        반드시 <span style="text-decoration: underline; text-underline-offset: 4px;">압축을 푼 뒤 폴더 안에서</span>
-                        실행해 주세요.
-                    </p>
+                <div class="note-card">
+                    <h2>꼭 확인해 주세요</h2>
+                    <ul class="note-list">
+                        <li>파일은 보통 <b>다운로드</b> 폴더에 저장됩니다.</li>
+                        <li>압축을 푼 뒤, 폴더 안에서 실행해야 정상 동작합니다.</li>
+                        <li>윈도우 경고창이 뜨면 <b>추가 정보 → 실행</b>을 눌러 주세요.</li>
+                    </ul>
                 </div>
-            </div>
 
-            <div class="guide-row">
-                <span class="num-circle">3</span>
-                <div class="guide-text">
-                    <h4>경고창 무시 (중요!)</h4>
-                    <p>'서명되지 않은 앱' 경고는 정상이니 <b>[추가 정보] -> [실행]</b>을 눌러주세요.</p>
+                <div class="warning-panel">
+                    <h2>윈도우 보호 창이 뜨면</h2>
+                    <div class="warning-grid">
+                        <figure>
+                            <img src="warning_win_1.png" alt="추가 정보 버튼">
+                            <figcaption>1. 추가 정보 클릭</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="warning_win_2.png" alt="실행 버튼">
+                            <figcaption>2. 실행 클릭</figcaption>
+                        </figure>
+                    </div>
                 </div>
-            </div>
-        </div>
-
-        <div class="warning-area">
-            <h4 class="warning-header">📑 윈도우에서 'PC 보호' 창이 떴나요?</h4>
-            <div class="warning-img-flex">
-                <div class="w-img-item"><img src="warning_win_1.png" alt="PC 보호 경고창"><span class="w-caption">1단계: 추가 정보
-                        클릭</span></div>
-                <div class="w-img-item"><img src="warning_win_2.png" alt="실행 버튼 화면"><span class="w-caption">2단계: 실행
-                        클릭</span></div>
-            </div>
-        </div>
-
-        <div id="mission-box-1" class="check-mission-box" onclick="toggleCheck(1)">
-            <div class="mission-info" style="width: 100%;">
-                <strong>🖥️ 앱 메인 화면이 떴나요? (아래 이미지 참고)</strong>
-                <div class="zoom-container" style="margin-top:15px; text-align:center;">
-                    <img src="루지코지 실행시 첫화면.png"
-                        style="max-width:250px; margin: 0 auto; display: inline-block; box-shadow: 0 4px 15px rgba(0,0,0,0.1);"
-                        alt="첫화면">
-                </div>
-                <div style="font-size:0.85rem; color:#888; margin-top:10px;">화면이 보이면 여기를 클릭해 주세요.</div>
-            </div>
-            <div class="check-circle">✔</div>
-        </div>
-
-        <button id="btn-next-1" class="btn-next" onclick="nextStep(2)" disabled>
-            다음 미션으로 이동 →
-        </button>
-    </div>
-
-    <div id="step-2" class="mission-card">
-        <div class="step-badge">STEP 02</div>
-        <h2 class="mission-title">증거 기록하기</h2>
-        <p class="mission-desc">
-            설치가 무사히 완료되었군요!<br>
-            이제 <b>3초 만에 증거를 기록하고 보관하는 경험</b>을 해보세요.
-        </p>
-
-        <button class="btn-action" onclick="showStep2Detail()">
-            🚀 기록 시작하기
-        </button>
-
-        <p style="margin-top: 20px; font-size: 0.9rem; color: #999;">
-            위 버튼을 누르면 상세 가이드가 나타납니다.
-        </p>
-    </div>
-
-    <div id="step-2-detail" class="mission-card">
-        <div class="step-badge">STEP 02</div>
-        <h2 class="mission-title">직접 기록해보기</h2>
-        <p class="mission-desc" style="margin-bottom: 20px;">
-            가장 기본이 되는 기능입니다.<br>
-            아래 가이드에 따라 <b>새로운 증거</b>를 직접 기록해 보세요.
-        </p>
-
-        <div id="part-2-1">
-            <h3 style="font-size: 1.1rem; margin-bottom: 15px; color: #444; font-weight: 700;">1. 첫 화면 좌측의 [+] 버튼 누르기
-            </h3>
-            <p style="color: #666; font-size: 0.95rem; margin-bottom: 15px;">
-                왼쪽 메인 메뉴에서 <b>[+] 버튼</b>을 누르면, 중앙에 새로운 증거를 기록할 수 있는 팝업 창이 나타납니다.
-            </p>
-            <div class="zoom-container" style="margin-bottom: 25px;">
-                <span
-                    style="display: block; font-weight: 800; font-size: 0.9rem; color: #d81b60; margin-bottom: 8px;">👇
-                    1단계: 좌측 상단의 [+] 메뉴를 클릭하세요.</span>
-                <img src="루지코지 실행시 첫화면.png" alt="앱 메인화면">
-            </div>
-            <div class="zoom-container">
-                <span
-                    style="display: block; font-weight: 800; font-size: 0.9rem; color: #3949ab; margin-bottom: 8px;">👇
-                    2단계: 클릭하면 아래처럼 빈 기록 창이 뜹니다!</span>
-                <img src="증거 기록하기 1 첫화면.png" alt="기록 창 등장">
-            </div>
-            <div id="mission-box-2-1" class="check-mission-box" onclick="togglePart(2, 1)">
-                <div class="mission-info">
-                    <strong>👆 [+] 버튼을 눌러 기록 창을 띄우셨나요?</strong>
-                    <div style="font-size:0.85rem; color:#888;">클릭했다면 체크해주세요.</div>
-                </div>
-                <div class="check-circle">✔</div>
-            </div>
-        </div>
-
-        <div id="part-2-2" style="display: none; border-top: 1px solid #eee; padding-top: 30px; margin-top: 30px;">
-            <h3 style="font-size: 1.1rem; margin-bottom: 15px; color: #444; font-weight: 700;">2. 빨간 박스 부분에 내용 기록하기</h3>
-            <p style="color: #666; font-size: 0.95rem; margin-bottom: 15px;">
-                발생한 상황이나 기록해둘 내용을 간단명료하게 작성해 주세요.
-            </p>
-            <div class="zoom-container">
-                <img src="증거 기록하기 2 내용적기.png" alt="내용 적기">
-            </div>
-            <div id="mission-box-2-2" class="check-mission-box" onclick="togglePart(2, 2)">
-                <div class="mission-info">
-                    <strong>✍️ 내용을 모두 작성하셨나요?</strong>
-                    <div style="font-size:0.85rem; color:#888;">작성했다면 클릭해주세요.</div>
-                </div>
-                <div class="check-circle">✔</div>
-            </div>
-        </div>
-
-        <div id="part-2-3" style="display: none; border-top: 1px solid #eee; padding-top: 30px; margin-top: 30px;">
-            <h3 style="font-size: 1.1rem; margin-bottom: 15px; color: #444; font-weight: 700;">3. 상세 정보(주체/장소/관계자 등) 입력
-                후 저장하기</h3>
-            <p style="color: #666; font-size: 0.95rem; margin-bottom: 15px;">
-                하단의 <b>주체, 장소, 보관위치, 관계자</b> 등을 꼼꼼히 설정해 주셔야 나중에 증거를 모을 때 훨씬 유리합니다!<br>모두 적었다면 화면을 아래로 내려 <b>저장하기</b>를
-                눌러주세요.
-            </p>
-            <div class="zoom-container" style="margin-bottom: 15px;">
-                <img src="증거 기록하기 3 그외정보 적기.png" alt="상세정보 적기">
-            </div>
-            <div class="zoom-container" style="margin-bottom: 15px;">
-                <img src="증거 기록하기 4 저장하기.png" alt="저장 버튼">
-            </div>
-            <div class="zoom-container">
-                <img src="증거 기록하기 5 저장완료.png" alt="저장 완료">
-            </div>
-
-            <div id="mission-box-2-3" class="check-mission-box" onclick="togglePart(2, 3)">
-                <div class="mission-info">
-                    <strong>💾 저장까지 완료하셨나요?</strong>
-                    <div style="font-size:0.85rem; color:#888;">저장했다면 클릭해주세요. </div>
-                </div>
-                <div class="check-circle">✔</div>
-            </div>
-        </div>
-
-        <div id="part-2-4" style="display: none; border-top: 1px solid #eee; padding-top: 30px; margin-top: 30px;">
-            <h3 style="font-size: 1.1rem; margin-bottom: 15px; color: #444; font-weight: 700;">4. 생성된 증거 확인하기</h3>
-            <p style="color: #666; font-size: 0.95rem; margin-bottom: 15px;">
-                상단의 <b>[증거관리]</b> 탭에 방금 만든 증거가 잘 생성되었는지 확인해 보세요!
-            </p>
-            <div class="zoom-container">
-                <img src="증거 기록하기 6 증거관리에서 확인.png" alt="증거관리에서 확인">
-            </div>
-
-            <div id="mission-box-2-4" class="check-mission-box" onclick="togglePart(2, 4)">
-                <div class="mission-info">
-                    <strong>👀 내 증거를 확인하셨나요?</strong>
-                    <div style="font-size:0.85rem; color:#888;">확인했다면 클릭해주세요. </div>
-                </div>
-                <div class="check-circle">✔</div>
-            </div>
-
-            <button id="btn-next-2" class="btn-next" onclick="nextStep(3)" style="display: none; margin-top: 20px;">
-                다음 미션(사건 기록하기)으로 이동 →
-            </button>
-        </div>
-    </div>
-
-    <div id="step-3" class="mission-card">
-        <div class="step-badge">STEP 03</div>
-        <h2 class="mission-title">사건 기록하기 (증거 묶기)</h2>
-        <p class="mission-desc" style="margin-bottom: 30px;">
-            수많은 증거들을 특정 <b>카테고리(사건)</b>로 묶어옵니다.<br>
-            원하는 인물, 내용, 키워드를 바탕으로 관련된 증거들을 한 번에 모아보세요.
-        </p>
-
-        <div id="part-3-1">
-            <h3 style="font-size: 1.1rem; margin-bottom: 15px; color: #444; font-weight: 700;">1. 상단 '사건' 탭에서 '사건 기록하기'
-                클릭</h3>
-            <p style="color: #666; font-size: 0.95rem; margin-bottom: 15px;">
-                상단 메뉴에서 <b>[사건]</b> 탭으로 이동 후, 화면의 <strong>[사건 기록하기]</strong>를 클릭하세요.
-            </p>
-            <div class="zoom-container">
-                <img src="사건 기록하기 1 사건탭 들어가기.png" alt="사건탭 들어가기">
-            </div>
-            <div id="mission-box-3-1" class="check-mission-box" onclick="togglePart(3, 1)">
-                <div class="mission-info">
-                    <strong>👆 사건 기록하기 창을 띄우셨나요?</strong>
-                    <div style="font-size:0.85rem; color:#888;">창이 떴다면 클릭해주세요.</div>
-                </div>
-                <div class="check-circle">✔</div>
-            </div>
-        </div>
-
-        <div id="part-3-2" style="display: none; border-top: 1px solid #eee; padding-top: 30px; margin-top: 30px;">
-            <h3 style="font-size: 1.1rem; margin-bottom: 10px; color: #444; font-weight: 700;">2. 주체(인물) 및 검색 조건 설정하기
-            </h3>
-
-            <p style="color: #444; margin-bottom: 12px; font-weight: 600; font-size: 0.95rem;">
-                먼저, 불러올 대상(주체)을 검색해서 추가합니다.
-            </p>
-
-            <div
-                style="background: #fff3c4; border: 1px solid #ffe082; padding: 12px 15px; margin-bottom: 15px; border-radius: 8px; font-size: 0.9rem; color: #d84315;">
-                🚨 <b>주의: 파란색 박스 버튼의 마법과 함정!</b><br>
-                우측의 <b>'내용/일시 상관없이 모두 불러오기'</b> 버튼을 누르면, 어떤 내용이나 날짜를 적었든 상관없이 추가한 주체의 <b>모든 증거</b>들을 한 번에 다 불러옵니다. 필요할
-                때만 신중히 사용하세요!
-            </div>
-
-            <div class="zoom-container" style="margin-bottom: 25px;">
-                <img src="사건 기록하기 2 주체설정.png" alt="주체 설정">
-            </div>
-
-            <p style="color: #444; margin-bottom: 12px; font-weight: 600; font-size: 0.95rem;">
-                그 다음, <b>어떤 사건(키워드) 위주로 불러올지</b> 붉은 박스 영역에 적고 사건의 기간이나 제목을 파란 박스 영역에 직접 설정한 뒤 <b>사건기록 시작</b>을 누릅니다.
-            </p>
-
-            <div class="zoom-container" style="margin-bottom: 15px;">
-                <img src="사건 기록하기 3 사건내용적고 저장.png" alt="사건 내용 적고 저장">
-            </div>
-
-            <div id="mission-box-3-2" class="check-mission-box" onclick="togglePart(3, 2)">
-                <div class="mission-info">
-                    <strong>✍️ 조건에 맞게 세팅하고 시작 버튼을 눌렀나요?</strong>
-                    <div style="font-size:0.85rem; color:#888;">세팅을 마쳤다면 클릭해주세요.</div>
-                </div>
-                <div class="check-circle">✔</div>
-            </div>
-        </div>
-
-        <div id="part-3-3" style="display: none; border-top: 1px solid #eee; padding-top: 30px; margin-top: 30px;">
-            <h3 style="font-size: 1.1rem; margin-bottom: 15px; color: #444; font-weight: 700;">3. 완성된 사건 확인하기</h3>
-            <p style="color: #666; margin-bottom: 15px; font-size: 0.95rem;">
-                짜잔! <strong>'사건 조회하기'</strong>에 들어가시면, 방금 입력한 조건대로 증거들이 찰떡같이 묶여 사건 하나로 생성된 것을 보실 수 있습니다.
-            </p>
-
-            <div class="zoom-container" style="margin-bottom: 15px;">
-                <img src="사건 기록하기 4 사건 조회하기에서 확인.png" alt="조회하기에서 확인">
-            </div>
-
-            <div id="mission-box-3-3" class="check-mission-box" onclick="togglePart(3, 3)">
-                <div class="mission-info">
-                    <strong>🎉 완성된 사건 기록을 확인하셨나요?</strong>
-                    <div style="font-size:0.85rem; color:#888;">확인했다면 클릭해주세요.</div>
-                </div>
-                <div class="check-circle">✔</div>
-            </div>
-
-            <button id="btn-next-3" class="btn-next" onclick="nextStep(4)" style="display: none; margin-top: 20px;">
-                마지막 미션(증빙 출력)으로 이동 →
-            </button>
-        </div>
-    </div>
-
-    <div id="step-4" class="mission-card">
-        <div class="step-badge">STEP 04</div>
-        <h2 class="mission-title">증빙자료 출력(사건 출력하기)</h2>
-        <p class="mission-desc" style="margin-bottom: 30px;">
-            루지코지의 핵심은 <b>'선생님의 안전'</b>입니다.<br>
-            모아둔 기록을 클릭 한 번에 공문서 수준의 <b>사건 보고서(PDF)</b>로 출력해 보세요.
-        </p>
-
-        <div id="part-4-1">
-            <h3 style="font-size: 1.1rem; margin-bottom: 15px; color: #444; font-weight: 700;">1. 출력할 묶음 선택하기</h3>
-            <p style="color: #666; font-size: 0.95rem; margin-bottom: 15px;">
-                상단 메뉴에서 <b>[사건 출력하기]</b> 탭으로 이동하세요.<br>
-                화면에 뜨는 묶음(사건)을 클릭하면, 중앙에 보고서 미리보기 창이 나타납니다.
-            </p>
-            <div class="zoom-container" style="margin-bottom: 25px;">
-                <span
-                    style="display: block; font-weight: 800; font-size: 0.9rem; color: #d81b60; margin-bottom: 8px;">👇
-                    1단계: 출력할 사건 묶음을 클릭하세요.</span>
-                <img src="사건 출력하기 1 사건 클릭.png" alt="출력할 사건 클릭">
-            </div>
-            <div class="zoom-container" style="margin-bottom: 15px;">
-                <span
-                    style="display: block; font-weight: 800; font-size: 0.9rem; color: #3949ab; margin-bottom: 8px;">👇
-                    2단계: 클릭하면 아래처럼 보고서 창이 뜹니다!</span>
-                <img src="사건 출력하기 2 저장창.png" alt="보고서 확인 창">
-            </div>
-            <div id="mission-box-4-1" class="check-mission-box" onclick="togglePart(4, 1)">
-                <div class="mission-info">
-                    <strong>🖨️ 출력할 묶음을 클릭해 보고서 창을 띄우셨나요?</strong>
-                    <div style="font-size:0.85rem; color:#888;">띄웠다면 체크해주세요.</div>
-                </div>
-                <div class="check-circle">✔</div>
-            </div>
-        </div>
-
-        <div id="part-4-2" style="display: none; border-top: 1px solid #eee; padding-top: 30px; margin-top: 30px;">
-            <h3 style="font-size: 1.1rem; margin-bottom: 15px; color: #444; font-weight: 700;">2. PDF로 저장하기</h3>
-            <p style="color: #666; margin-bottom: 15px; font-size: 0.95rem;">
-                이제 상단의 <strong>[PDF로 저장]</strong> 버튼을 클릭하여 파일 저장을 완료하세요!
-            </p>
-            <div class="zoom-container" style="margin-bottom: 15px;">
-                <img src="사건 출력하기 3 저장하기.png" alt="PDF 저장 버튼 클릭">
-            </div>
-            <div id="mission-box-4-2" class="check-mission-box" onclick="togglePart(4, 2)">
-                <div class="mission-info">
-                    <strong>💾 PDF로 저장을 완료하셨나요?</strong>
-                    <div style="font-size:0.85rem; color:#888;">저장했다면 체크해주세요.</div>
-                </div>
-                <div class="check-circle">✔</div>
-            </div>
-        </div>
-
-        <div id="part-4-3" style="display: none; border-top: 1px solid #eee; padding-top: 30px; margin-top: 30px;">
-            <h3 style="font-size: 1.1rem; margin-bottom: 15px; color: #444; font-weight: 700;">3. 최종 보고서 확인</h3>
-            <p style="color: #666; margin-bottom: 15px; font-size: 0.95rem;">
-                저장된 <strong>사건 보고서 PDF 파일</strong>을 열어보세요.<br>
-                이 문서 하나면 어떠한 소명 요구에도 완벽하게 대처할 수 있습니다.
-            </p>
-            <div class="zoom-container" style="margin-bottom: 15px;">
-                <img src="사건 출력하기 4 저장된 pdf확인.png" alt="최종 PDF 파일 확인">
-            </div>
-            <div id="mission-box-4-3" class="check-mission-box" onclick="togglePart(4, 3)">
-                <div class="mission-info">
-                    <strong>🎉 최종 PDF 파일까지 모두 확인하셨나요?</strong>
-                    <div style="font-size:0.85rem; color:#888;">수고하셨습니다! 클릭해주세요.</div>
-                </div>
-                <div class="check-circle">✔</div>
-            </div>
-
-            <button id="btn-next-4" class="btn-action" onclick="showCustomModal()"
-                style="display: none; margin-top: 40px; width: 100%;">
-                🏆 모든 미션 완료! (수고하셨습니다)
-            </button>
-        </div>
-
-        <div id="final-modal-overlay" class="modal-overlay" style="display: none;">
-            <div class="modal-content">
-                <div style="font-size: 4rem; margin-bottom: 10px;">🛡️</div>
-                <h2 style="font-size: 1.6rem; font-weight: 900; color: #00C853; margin-bottom: 15px;">모든 미션 클리어!</h2>
-                <button class="btn-action" onclick="closeModalAndGoHome()"
-                    style="padding: 15px; font-size: 1.1rem; border-radius: 10px;">
-                    처음 화면으로 돌아가기
-                </button>
-            </div>
-        </div>
-    </div>
-    <div id="trouble-modal-overlay" class="modal-overlay" style="display: none;">
-        <div class="modal-content" style="border: 2px solid #ff9800; max-width: 450px;">
-            <div style="font-size: 3rem; margin-bottom: 10px;">🚨</div>
-            <h2 style="font-size: 1.4rem; font-weight: 900; color: #e65100; margin-bottom: 20px;">앗! 관련자 [추가] 버튼을 누르셨나요?
-            </h2>
-
-            <div style="margin-bottom: 20px;">
-                <img src="안될시1.png" alt="추가 버튼 확인"
-                    style="width: 100%; border-radius: 8px; border: 1px solid #ddd; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-            </div>
-
-            <p
-                style="color: #555; font-size: 0.95rem; line-height: 1.6; margin-bottom: 25px; text-align: left; background: #fff8e1; padding: 18px; border-radius: 10px;">
-                메모 3개가 다 모이지 않는 가장 큰 이유는 앞선 미션에서 <b>관련자(학생1 등)를 지정하고 우측의 <span
-                        style="color:#d32f2f; font-weight:bold;">[추가]</span> 버튼을 누르지 않았기 때문</b>입니다.<br><br>
-                목록에서 이름만 고르고 넘어가면 AI가 인식하지 못해요! 꼭 추가 버튼을 눌러서 아래에 <b>회색 이름표</b>가 생겼는지 확인해 주셔야 합니다.<br><br>
-                <b>💡 해결 방법:</b> 프로그램의 <b>[1. 메모하기]</b> 탭으로 돌아가서 우측에 있는 이전 메모들을 클릭해 수정한 뒤, 다시 모아보세요!
-            </p>
-
-            <button class="btn-action" onclick="closeTroubleModal()"
-                style="padding: 15px; font-size: 1.1rem; border-radius: 10px; background: #ff9800; box-shadow: 0 5px 15px rgba(255, 152, 0, 0.3);">
-                확인했어요 (창 닫기)
-            </button>
-        </div>
+            </section>
+        </main>
     </div>
 
     <script>
-        // 1. 구글 스프레드시트 URL
-        const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzlGdBouqHmaHJzY1qP9VNaB_G0CJomirBvniezApbDPk-9HdNajTmeiqVvG78veTzw/exec';
+        const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzlGdBouqHmaHJzY1qP9VNaB_G0CJomirBvniezApbDPk-9HdNajTmeiqVvG78veTzw/exec";
 
-        // 2. 사용자 ID 생성
         function getUserId() {
-            let userId = localStorage.getItem('roosy_user_id');
+            let userId = localStorage.getItem("roosy_user_id");
+
             if (!userId) {
-                const randomStr = Math.random().toString(36).substring(2, 10) + Math.random().toString(36).substring(2, 6);
-                userId = 'user_' + randomStr;
-                localStorage.setItem('roosy_user_id', userId);
+                const randomStr =
+                    Math.random().toString(36).substring(2, 10) +
+                    Math.random().toString(36).substring(2, 6);
+                userId = "user_" + randomStr;
+                localStorage.setItem("roosy_user_id", userId);
             }
+
             return userId;
         }
 
-        // 3. 다운로드 카운팅
         function trackDownload() {
             const userId = getUserId();
             const action = "DOWNLOAD_ACTION";
-            const version = "official_v1";
-            const finalUrl = `${SCRIPT_URL}?id=${userId}&action=${action}&version=${version}&t=${new Date().getTime()}`;
+            const version = "download_only_page";
+            const finalUrl =
+                `${SCRIPT_URL}?id=${userId}&action=${action}&version=${version}&t=${Date.now()}`;
 
-            fetch(finalUrl, { method: 'GET', mode: 'no-cors' })
-                .then(() => console.log("기록 완료"))
-                .catch(err => console.error("기록 실패", err));
-        }
-
-        // 4. 다음 단계 이동
-        function nextStep(nextNum) {
-            document.querySelector('.mission-card.active').classList.remove('active');
-            document.getElementById('step-' + nextNum).classList.add('active');
-
-            let progress = nextNum * 25;
-            document.getElementById('progress-bar').style.width = progress + '%';
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-
-            document.querySelectorAll('.sidebar-menu-item').forEach(el => el.classList.remove('active'));
-            if (document.getElementById('nav-step-' + nextNum)) {
-                document.getElementById('nav-step-' + nextNum).classList.add('active');
-            }
-        }
-
-        // 4-1. 사이드바 클릭 이동 (자유이동)
-        function goToStep(stepNum) {
-            document.querySelectorAll('.mission-card').forEach(card => card.classList.remove('active'));
-
-            if (stepNum === 2) {
-                document.getElementById('step-2-detail').classList.add('active');
-            } else {
-                document.getElementById('step-' + stepNum).classList.add('active');
-            }
-
-            let progress = stepNum * 25;
-            document.getElementById('progress-bar').style.width = progress + '%';
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-
-            document.querySelectorAll('.sidebar-menu-item').forEach(el => el.classList.remove('active'));
-            document.getElementById('nav-step-' + stepNum).classList.add('active');
-        }
-
-        // 5. 체크박스 토글 (STEP 1 용)
-        function toggleCheck(stepNum) {
-            const box = document.getElementById('mission-box-' + stepNum);
-            const btn = document.getElementById('btn-next-' + stepNum);
-
-            box.classList.toggle('checked');
-
-            if (box.classList.contains('checked')) {
-                btn.classList.add('active');
-                btn.disabled = false;
-            } else {
-                btn.classList.remove('active');
-                btn.disabled = true;
-            }
-        }
-
-        // 6. STEP 02 인트로 -> 상세 미션 전환
-        function showStep2Detail() {
-            document.getElementById('step-2').classList.remove('active');
-            document.getElementById('step-2-detail').classList.add('active');
-
-            document.getElementById('progress-bar').style.width = '40%';
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        }
-
-        // 7. 파트별 토글 (자동으로 다음 파트를 찾아 여는 스마트 버전)
-        function togglePart(stepNum, partNum) {
-            const box = document.getElementById(`mission-box-${stepNum}-${partNum}`);
-            box.classList.toggle('checked');
-
-            if (box.classList.contains('checked')) {
-                const nextPart = document.getElementById(`part-${stepNum}-${partNum + 1}`);
-                if (nextPart) {
-                    nextPart.style.display = 'block';
-                    nextPart.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                } else {
-                    const nextBtn = document.getElementById(`btn-next-${stepNum}`);
-                    if (nextBtn) {
-                        nextBtn.style.display = 'block';
-                        nextBtn.classList.add('active');
-                        nextBtn.disabled = false;
-                        nextBtn.scrollIntoView({ behavior: 'smooth', block: 'center' });
-                    }
-                }
-            }
-        }
-
-        // 8. 예쁜 커스텀 팝업 띄우기
-        function showCustomModal() {
-            document.getElementById('final-modal-overlay').style.display = 'flex';
-        }
-
-        // 9. 팝업 닫고 처음 화면(STEP 1)으로 돌아가기
-        function closeModalAndGoHome() {
-            document.getElementById('final-modal-overlay').style.display = 'none';
-            goToStep(1);
-        }
-
-        // 10. 트러블슈팅(에러 해결) 모달 띄우기 및 닫기
-        function showTroubleModal() {
-            document.getElementById('trouble-modal-overlay').style.display = 'flex';
-        }
-
-        function closeTroubleModal() {
-            document.getElementById('trouble-modal-overlay').style.display = 'none';
-        }
-
-        // 11. 스크롤 스파이 (화면 스크롤에 따라 사이드바 자동 하이라이트)
-        document.addEventListener("DOMContentLoaded", () => {
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        const id = entry.target.id;
-                        let stepNum = id.replace('step-', '');
-                        if (id === 'step-2-detail') stepNum = '2'; // 2단계 예외 처리
-
-                        const navItem = document.getElementById('nav-step-' + stepNum);
-                        if (navItem) {
-                            // 목차 활성화
-                            document.querySelectorAll('.sidebar-menu-item').forEach(el => el.classList.remove('active'));
-                            navItem.classList.add('active');
-
-                            // 프로그레스 바 동기화
-                            let progress = parseInt(stepNum) * 25;
-                            document.getElementById('progress-bar').style.width = progress + '%';
-                        }
-                    }
-                });
-            }, {
-                root: null,
-                rootMargin: '-30% 0px -60% 0px', // 화면 중앙 부근에 왔을 때 감지
-                threshold: 0
+            fetch(finalUrl, { method: "GET", mode: "no-cors" }).catch((error) => {
+                console.error("다운로드 기록 실패", error);
             });
-
-            // 화면에 있는 모든 미션 카드 관찰
-            document.querySelectorAll('.mission-card').forEach(card => {
-                observer.observe(card);
-            });
-        });
-
+        }
     </script>
 </body>
 
